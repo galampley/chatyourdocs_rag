@@ -11,6 +11,7 @@ ChatYourDocs x RAG is an application that leverages Retrieval Augmented Generati
   - PyPDF2
   - dotenv
   - openai
+  - faiss
 
 ## Getting Started
 1. Clone this repository to your local machine.
@@ -27,8 +28,8 @@ ChatYourDocs x RAG is an application that leverages Retrieval Augmented Generati
 - The application will use RAG and a vector database to generate detailed responses based on document content.
 
 ## File Descriptions
-- `app.py`: The main application script that powers the user interface and functionalities.
-- `functions.py`: Core functions responsible for database connections, document processing, and query answering.
+- `main.py`: The main application script that powers the user interface and functionalities.
+- `functions.py`: Secondary support functions. 
 
 ## Function Descriptions
 - **Vector Database Management**: Uses FAISS local vector database. Functions to initialize the database and manage conversation histories.
