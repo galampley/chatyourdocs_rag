@@ -1,0 +1,9 @@
+PyPDF2
+python-dotenv
+numpy
+openai
+streamlit
+matplotlib
+plotly
+scikit-learn
+tenacity
