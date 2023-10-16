@@ -8,3 +8,4 @@ plotly
 scikit-learn
 tenacity
 langchain
+tiktoken
