@@ -2,7 +2,8 @@ import streamlit as st
 from functions import *
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import RetrievalQA
-from langchain.llms.openai import OpenAIChat
+# from langchain.llms.openai import OpenAIChat
+from langchain.chat_models import ChatOpenAI 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
@@ -22,7 +23,8 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Initialize memory and LLM
-llm = OpenAIChat()
+# llm = OpenAIChat()
+llm = ChatOpenAI()
 
 # Initialize the embedder
 embedder = OpenAIEmbeddings()
